@@ -1,3 +1,4 @@
+import style from './index.css';
 import Key from '../Key'
 
 const Octave = ({ onClick, octaveNumber }) => {
@@ -13,7 +14,7 @@ const Octave = ({ onClick, octaveNumber }) => {
 
   //Middle C should be 60
 
-  let octave = octaveNumber<2?2:octaveNumber
+  let octave = (octaveNumber-1)<2?2:(octaveNumber-1)
 
   return (
     <div className="arp_keys_octave" >

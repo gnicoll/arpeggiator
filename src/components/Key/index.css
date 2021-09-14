@@ -1,0 +1,576 @@
+
+.arp_key{
+    height: 4rem;
+    width: 2rem;
+    padding: 0 1px;
+    position:relative;
+    box-sizing:  content-box;
+  }
+  .arp_key:nth-of-type(5) {
+    margin-right:2px
+  }
+  
+  .arp_key_inner{ 
+    transition: all 0.25s ease;
+    background: white;
+    height: 4rem;
+    padding: 2rem 1rem;
+    width: 0rem;  
+    border-bottom: 2px solid #aaa;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-sizing:  content-box;
+  }
+  .arp_key_inner:hover{
+    background: #ccc;
+  }
+  
+  .arp_key--sharp{
+    position: relative;
+    top: 0;
+    width: 0;
+    z-index: 1;
+    transform: translateX(-1rem);
+  }
+  .arp_key--sharp .arp_key_inner{
+    background: black;
+    border-bottom: 2px solid #333;
+    height: 1rem;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+  .arp_key--sharp .arp_key_inner:hover{
+    background: #222;
+  }
+  
+
+.arp_keys--playing_50 .arp_key_50 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #f9cf27 !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_51 .arp_key_51 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_52 .arp_key_52 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_53 .arp_key_53 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_54 .arp_key_54 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_55 .arp_key_55 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_56 .arp_key_56 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_57 .arp_key_57 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_58 .arp_key_58 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_59 .arp_key_59 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  
+  .arp_key_60 .arp_key_inner:before {
+    width:1px;
+    height: 3em;
+    background: #666;
+  }
+  .arp_key_60 .arp_key_inner:after {
+    width:1px;
+    height: 3em;
+    background: #666;
+  }
+  
+  /* MIDDLE C */
+  .arp_keys--playing_60 .arp_key_60 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_61 .arp_key_61 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_62 .arp_key_62 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_63 .arp_key_63 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_64 .arp_key_64 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_65 .arp_key_65 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_66 .arp_key_66 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_67 .arp_key_67 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_68 .arp_key_68 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_69 .arp_key_69 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  
+  .arp_keys--playing_70 .arp_key_70 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_71 .arp_key_71 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_72 .arp_key_72 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_73 .arp_key_73 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_74 .arp_key_74 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_75 .arp_key_75 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_76 .arp_key_76 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_77 .arp_key_77 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_78 .arp_key_78 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_79 .arp_key_79 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  
+  .arp_keys--playing_80 .arp_key_80 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_81 .arp_key_81 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_82 .arp_key_82 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_83 .arp_key_83 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_84 .arp_key_84 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_85 .arp_key_85 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_86 .arp_key_86 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_87 .arp_key_87 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_88 .arp_key_88 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_89 .arp_key_89 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  
+  .arp_keys--playing_90 .arp_key_90 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_91 .arp_key_91 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_92 .arp_key_92 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_93 .arp_key_93 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_94 .arp_key_94 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_95 .arp_key_95 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_96 .arp_key_96 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_97 .arp_key_97 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_98 .arp_key_98 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_99 .arp_key_99 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  
+  .arp_keys--playing_100 .arp_key_100 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_101 .arp_key_101 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_102 .arp_key_102 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_103 .arp_key_103 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_104 .arp_key_104 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_105 .arp_key_105 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_106 .arp_key_106 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_107 .arp_key_107 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_108 .arp_key_108 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_109 .arp_key_109 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  
+  .arp_keys--playing_110 .arp_key_110 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_111 .arp_key_111 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_112 .arp_key_112 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_113 .arp_key_113 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_114 .arp_key_114 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_115 .arp_key_115 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_116 .arp_key_116 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_117 .arp_key_117 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_118 .arp_key_118 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_119 .arp_key_119 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  
+  .arp_keys--playing_120 .arp_key_120 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_121 .arp_key_121 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_122 .arp_key_122 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_123 .arp_key_123 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_124 .arp_key_124 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_125 .arp_key_125 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_126 .arp_key_126 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_127 .arp_key_127 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_128 .arp_key_128 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_129 .arp_key_129 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  
+  .arp_keys--playing_40 .arp_key_40 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_41 .arp_key_41 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_42 .arp_key_42 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_43 .arp_key_43 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_44 .arp_key_44 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_45 .arp_key_45 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_46 .arp_key_46 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_47 .arp_key_47 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_48 .arp_key_48 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_49 .arp_key_49 .arp_key_inner {
+    background: #f9cf27 !important;
+    border-bottom: 2px solid  #dbb82e !important;
+    box-shadow: 0px 0px 15px 5px #f9cf27;
+  }
+  .arp_keys--playing_20 .arp_key_20 .arp_key_inner {
+      background: #f9cf27;
+    }
+    .arp_keys--playing_21 .arp_key_21 .arp_key_inner {
+      background: #f9cf27;
+    }
+    .arp_keys--playing_22 .arp_key_22 .arp_key_inner {
+      background: #f9cf27;
+    }
+    .arp_keys--playing_23 .arp_key_23 .arp_key_inner {
+      background: #f9cf27;
+    }
+    .arp_keys--playing_24 .arp_key_24 .arp_key_inner {
+      background: #f9cf27;
+    }
+    .arp_keys--playing_25 .arp_key_25 .arp_key_inner {
+      background: #f9cf27;
+    }
+    .arp_keys--playing_26 .arp_key_26 .arp_key_inner {
+      background: #f9cf27;
+    }
+    .arp_keys--playing_27 .arp_key_27 .arp_key_inner {
+      background: #f9cf27;
+    }
+    .arp_keys--playing_28 .arp_key_28 .arp_key_inner {
+      background: #f9cf27;
+    }
+    .arp_keys--playing_29 .arp_key_29 .arp_key_inner {
+      background: #f9cf27;
+    }
+    .arp_keys--playing_30 .arp_key_30 .arp_key_inner {
+        background: #f9cf27;
+      }
+      .arp_keys--playing_31 .arp_key_31 .arp_key_inner {
+        background: #f9cf27;
+      }
+      .arp_keys--playing_32 .arp_key_32 .arp_key_inner {
+        background: #f9cf27;
+      }
+      .arp_keys--playing_33 .arp_key_33 .arp_key_inner {
+        background: #f9cf27;
+      }
+      .arp_keys--playing_34 .arp_key_34 .arp_key_inner {
+        background: #f9cf27;
+      }
+      .arp_keys--playing_35 .arp_key_33 .arp_key_inner {
+        background: #f9cf27;
+      }
+      .arp_keys--playing_36 .arp_key_36 .arp_key_inner {
+        background: #f9cf27;
+      }
+      .arp_keys--playing_37 .arp_key_37 .arp_key_inner {
+        background: #f9cf27;
+      }
+      .arp_keys--playing_38 .arp_key_38 .arp_key_inner {
+        background: #f9cf27;
+      }
+      .arp_keys--playing_39 .arp_key_39 .arp_key_inner {
+        background: #f9cf27;
+      }

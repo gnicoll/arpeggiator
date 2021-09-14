@@ -1,0 +1,94 @@
+.arp_sequencenote {
+    cursor: pointer;
+    margin: 0 2px;
+    width: 2rem;
+    height: 3rem;
+    background: #d4af37;
+    border-radius: .25rem;
+    overflow:hidden;
+}
+.arp_sequencenote:hover {
+    background: #e6c765;
+}
+
+.arp_sequencenote_undefined {
+    background: #ddd;
+}
+.arp_sequencenote_undefined:hover {
+    background: #ccc;
+}
+
+.arp_sequencenote_noteNumber {
+}
+
+.arp_sequence--playing_0 .arp_sequencenote_step0{
+    box-sizing: border-box;
+    border: solid #333 2px;
+}
+.arp_sequence--playing_1 .arp_sequencenote_step1{
+    box-sizing: border-box;
+    border: solid #333 2px;
+}
+.arp_sequence--playing_2 .arp_sequencenote_step2{
+    box-sizing: border-box;
+    border: solid #333 2px;
+}
+.arp_sequence--playing_3 .arp_sequencenote_step3{
+    box-sizing: border-box;
+    border: solid #333 2px;
+}
+.arp_sequence--playing_4 .arp_sequencenote_step4{
+    box-sizing: border-box;
+    border: solid #333 2px;
+}
+.arp_sequence--playing_5 .arp_sequencenote_step5{
+    box-sizing: border-box;
+    border: solid #333 2px;
+}
+.arp_sequence--playing_6 .arp_sequencenote_step6{
+    box-sizing: border-box;
+    border: solid #333 2px;
+}
+.arp_sequence--playing_7 .arp_sequencenote_step7{
+    box-sizing: border-box;
+    border: solid #333 2px;
+}
+.arp_sequence--playing_8 .arp_sequencenote_step8{
+    box-sizing: border-box;
+    border: solid #333 2px;
+}
+.arp_sequence--playing_9 .arp_sequencenote_step9{
+    box-sizing: border-box;
+    border: solid #333 2px;
+}
+.arp_sequence--playing_10 .arp_sequencenote_step10{
+    box-sizing: border-box;
+    border: solid #333 2px;
+}
+.arp_sequence--playing_11 .arp_sequencenote_step11{
+    box-sizing: border-box;
+    border: solid #333 2px;
+}
+.arp_sequence--playing_12 .arp_sequencenote_step12{
+    box-sizing: border-box;
+    border: solid #333 2px;
+}
+.arp_sequence--playing_13 .arp_sequencenote_step13{
+    box-sizing: border-box;
+    border: solid #333 2px;
+}
+.arp_sequence--playing_14 .arp_sequencenote_step14{
+    box-sizing: border-box;
+    border: solid #333 2px;
+}
+.arp_sequence--playing_15 .arp_sequencenote_step15{
+    box-sizing: border-box;
+    border: solid #333 2px;
+}
+
+
+.arp_sequencenote_inner {
+    font-size: .75rem;
+    color: white;
+    padding: 1rem 0;
+}

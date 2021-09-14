@@ -1,0 +1,22 @@
+
+.arp_keys_octaves{
+    display:flex;
+    position:relative;
+    height: 10rem;
+    box-sizing:  content-box;
+  }
+  .arp_keys_octave{
+    overflow:hidden;
+    display:flex;
+    position:relative;
+    margin:2px 0 2px 2px;
+    height: 10rem;
+    box-sizing:  content-box;
+  }
+  .arp_keys_octave:last-of-type {
+    margin-right:0px
+  }
+  .arp_keys_octave:first-of-type {
+    margin-left:0px
+  }
+  

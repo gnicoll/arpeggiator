@@ -1,3 +1,5 @@
+import style from './index.css';
+
 const Key = ({ onClick, note, sharp, noteNumber }) => {
     function clickHandler(num, n){
         onClick(num, n)
