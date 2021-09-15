@@ -44,8 +44,8 @@ function App() {
     //arpLoop.arp.pattern = [0, 4, 7, 11, 11, 7, 4, 0];
     //arpLoop.arp.pattern = [0, 12, -12, undefined];
     //arpLoop.arp.pattern = [0, 4, 7, 11, -12, -8, -5, -1];
-    //arpLoop.arp.pattern = [0, 5, 9, 14];
-    arpLoop.arp.pattern = [0, undefined, undefined, undefined, undefined, undefined, undefined, undefined];
+    arpLoop.arp.pattern = [0, 5, 9, 14, 9, 5];
+    //arpLoop.arp.pattern = [0, undefined, undefined, undefined, undefined, undefined, undefined, undefined];
     //arpLoop.arp.pattern = [0];
     //arpLoop.arp.pattern = [0, 5, 3, 4];
     //arpLoop.notes = notes;
@@ -158,7 +158,8 @@ function App() {
   }
 
   function hoverSequenceHandler(num){
-    setHighlightNote(num)
+    if (notes.filter((n)=>n?.number===num)?.length !== 0)
+      setHighlightNote(num);
   }
 
   return (
@@ -180,14 +181,18 @@ function App() {
         </div>
       </div>
       <div className={'arp-keyboard-rest arp-keys-playing_'+playedNote+' arp-keys-highlighting_'+highlightNote}>
-        <div className='arp-keyboard-rest-key'  onClick={()=>assignNote(-1, 'rest')}>
-
+        <div 
+          className='arp-keyboard-rest-key'  
+          onClick={()=>assignNote(-1, 'rest')}
+          onMouseEnter={() => hoverSequenceHandler(-1)}
+          onMouseLeave={() => hoverSequenceHandler(undefined)} 
+        >
         </div>
       </div>
-      <Keyboard onClick={assignNote} onHover={hoverSequenceHandler} playedNote={playedNote} highlightNote={highlightNote} />
+      <Keyboard onClick={assignNote} notes={notes} onHover={hoverSequenceHandler} playedNote={playedNote} highlightNote={highlightNote} />
     </div>
     <div>
-      <div className={"arp_sequence arp_sequence--playing_"+playedStep+" arp_sequence--highlighting_"+highlightNote}>
+      <div className={"arp_sequence arp_sequence--playing_"+playedStep+" arp_sequence--highlighting_"+highlightNote+" arp_sequence--editing_"+editingStep}>
         <Sequence notes={notes} onHover={hoverSequenceHandler} onClick={clickSequenceHandler} />
       </div>
     </div>
@@ -201,7 +206,6 @@ function App() {
         )
       })}
     </div>
-    edit step {editingStep+1}
     <div>
       <select value={midiOutput} name="outputs" id="outputs">
         {

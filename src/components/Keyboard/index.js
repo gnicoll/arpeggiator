@@ -1,8 +1,12 @@
 import React from 'react';
 import Octave from '../Octave'
 
-const Keyboard = React.memo(({onClick, playedNote, highlightNote, onHover}) => {
+const Keyboard = React.memo(({onClick, playedNote, highlightNote, onHover, notes}) => {
   const octaves = [1,2,3,4,5,6,7]
+
+  //hightlight note should be empty if notes 
+  //const hnote = notes.filter((n)=>n?.note===highlightNote)?.length ? highlightNote:'';
+
   return (
     
     <div className={"arp_keys arp_keys--playing_"+playedNote+" arp_keys--highlighting_"+highlightNote}>

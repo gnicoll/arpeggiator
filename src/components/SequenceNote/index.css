@@ -6,6 +6,8 @@
     background: #d4af37;
     border-radius: .25rem;
     position:relative;
+    box-sizing: border-box;
+    border: solid 2px #d4af37;
 }
 .arp_sequencenote:hover {
     background: #e6c765;
@@ -20,11 +22,13 @@
     position: relative;
     top: -.75rem;
     border-radius: .25rem;
+    left: -2px;
 }
 
 .arp_sequencenote_undefined {
     cursor: auto;
     background: #ddd;
+    border: solid 2px #ddd;
 }
 .arp_sequencenote_undefined:hover {
     background: #ddd;
@@ -38,6 +42,54 @@
     color: white;
     padding: 1rem 0;
 }
+.arp_sequence--editing_0 .arp_sequencenote_step0{
+    border: solid 2px #d4af37;
+}
+.arp_sequence--editing_1 .arp_sequencenote_step1{
+    border: solid 2px #d4af37;
+}
+.arp_sequence--editing_2 .arp_sequencenote_step2{
+    border: solid 2px #d4af37;
+}
+.arp_sequence--editing_3 .arp_sequencenote_step3{
+    border: solid 2px #d4af37;
+}
+.arp_sequence--editing_4 .arp_sequencenote_step4{
+    border: solid 2px #d4af37;
+}
+.arp_sequence--editing_5 .arp_sequencenote_step5{
+    border: solid 2px #d4af37;
+}
+.arp_sequence--editing_6 .arp_sequencenote_step6{
+    border: solid 2px #d4af37;
+}
+.arp_sequence--editing_7 .arp_sequencenote_step7{
+    border: solid 2px #d4af37;
+}
+.arp_sequence--editing_8 .arp_sequencenote_step8{
+    border: solid 2px #d4af37;
+}
+.arp_sequence--editing_9 .arp_sequencenote_step9{
+    border: solid 2px #d4af37;
+}
+.arp_sequence--editing_10 .arp_sequencenote_step10{
+    border: solid 2px #d4af37;
+}
+.arp_sequence--editing_11 .arp_sequencenote_step11{
+    border: solid 2px #d4af37;
+}
+.arp_sequence--editing_12 .arp_sequencenote_step12{
+    border: solid 2px #d4af37;
+}
+.arp_sequence--editing_13 .arp_sequencenote_step13{
+    border: solid 2px #d4af37;
+}
+.arp_sequence--editing_14 .arp_sequencenote_step14{
+    border: solid 2px #d4af37;
+}
+.arp_sequence--editing_15 .arp_sequencenote_step15{
+    border: solid 2px #d4af37;
+}
 
 .arp_sequence--playing_0 .arp_sequencenote_step0:before{
     content: '';
@@ -48,6 +100,7 @@
     position: relative;
     top: -.75rem;
     border-radius: .25rem;
+    left: -2px;
 }
 .arp_sequence--playing_1 .arp_sequencenote_step1:before{
     content: '';
@@ -58,6 +111,7 @@
     position: relative;
     top: -.75rem;
     border-radius: .25rem;
+    left: -2px;
 }
 .arp_sequence--playing_2 .arp_sequencenote_step2:before{
     content: '';
@@ -68,6 +122,7 @@
     position: relative;
     top: -.75rem;
     border-radius: .25rem;
+    left: -2px;
 }
 .arp_sequence--playing_3 .arp_sequencenote_step3:before{
     content: '';
@@ -78,6 +133,7 @@
     position: relative;
     top: -.75rem;
     border-radius: .25rem;
+    left: -2px;
 }
 .arp_sequence--playing_4 .arp_sequencenote_step4:before{
     content: '';
@@ -88,6 +144,7 @@
     position: relative;
     top: -.75rem;
     border-radius: .25rem;
+    left: -2px;
 }
 .arp_sequence--playing_5 .arp_sequencenote_step5:before{
     content: '';
@@ -98,6 +155,7 @@
     position: relative;
     top: -.75rem;
     border-radius: .25rem;
+    left: -2px;
 }
 .arp_sequence--playing_6 .arp_sequencenote_step6:before{
     content: '';
@@ -108,6 +166,7 @@
     position: relative;
     top: -.75rem;
     border-radius: .25rem;
+    left: -2px;
 }
 .arp_sequence--playing_7 .arp_sequencenote_step7:before{
     content: '';
@@ -118,6 +177,7 @@
     position: relative;
     top: -.75rem;
     border-radius: .25rem;
+    left: -2px;
 }
 .arp_sequence--playing_8 .arp_sequencenote_step8:before{
     content: '';
@@ -128,6 +188,7 @@
     position: relative;
     top: -.75rem;
     border-radius: .25rem;
+    left: -2px;
 }
 .arp_sequence--playing_9 .arp_sequencenote_step9:before{
     content: '';
@@ -138,6 +199,7 @@
     position: relative;
     top: -.75rem;
     border-radius: .25rem;
+    left: -2px;
 }
 .arp_sequence--playing_10 .arp_sequencenote_step10:before{
     content: '';
@@ -148,6 +210,7 @@
     position: relative;
     top: -.75rem;
     border-radius: .25rem;
+    left: -2px;
 }
 .arp_sequence--playing_11 .arp_sequencenote_step11:before{
     content: '';
@@ -158,6 +221,7 @@
     position: relative;
     top: -.75rem;
     border-radius: .25rem;
+    left: -2px;
 }
 .arp_sequence--playing_12 .arp_sequencenote_step12:before{
     content: '';
@@ -168,6 +232,7 @@
     position: relative;
     top: -.75rem;
     border-radius: .25rem;
+    left: -2px;
 }
 .arp_sequence--playing_13 .arp_sequencenote_step13:before{
     content: '';
@@ -178,6 +243,7 @@
     position: relative;
     top: -.75rem;
     border-radius: .25rem;
+    left: -2px;
 }
 .arp_sequence--playing_14 .arp_sequencenote_step14:before{
     content: '';
@@ -188,6 +254,7 @@
     position: relative;
     top: -.75rem;
     border-radius: .25rem;
+    left: -2px;
 }
 .arp_sequence--playing_15 .arp_sequencenote_step15:before{
     content: '';
@@ -198,377 +265,498 @@
     position: relative;
     top: -.75rem;
     border-radius: .25rem;
+    left: -2px;
 }
 
 
 .arp_sequence--highlighting_-1 .arp_sequencenote_-1{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_0 .arp_sequencenote_0{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_1 .arp_sequencenote_1{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_2 .arp_sequencenote_2{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_3 .arp_sequencenote_3{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_4 .arp_sequencenote_4{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_5 .arp_sequencenote_5{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_6 .arp_sequencenote_6{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_7 .arp_sequencenote_7{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_8 .arp_sequencenote_8{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_9 .arp_sequencenote_9{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 
 .arp_sequence--highlighting_20 .arp_sequencenote_20{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_21 .arp_sequencenote_21{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_22 .arp_sequencenote_22{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_23 .arp_sequencenote_23{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_24 .arp_sequencenote_24{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_25 .arp_sequencenote_25{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_26 .arp_sequencenote_26{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_27 .arp_sequencenote_27{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_28 .arp_sequencenote_28{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_29 .arp_sequencenote_29{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 
 .arp_sequence--highlighting_30 .arp_sequencenote_30{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_31 .arp_sequencenote_31{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_32 .arp_sequencenote_32{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_33 .arp_sequencenote_33{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_34 .arp_sequencenote_34{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_35 .arp_sequencenote_35{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_36 .arp_sequencenote_36{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_37 .arp_sequencenote_37{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_38 .arp_sequencenote_38{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_39 .arp_sequencenote_39{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 
 .arp_sequence--highlighting_40 .arp_sequencenote_40{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_41 .arp_sequencenote_41{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_42 .arp_sequencenote_42{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_43 .arp_sequencenote_43{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_44 .arp_sequencenote_44{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_45 .arp_sequencenote_45{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_46 .arp_sequencenote_46{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_47 .arp_sequencenote_47{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_48 .arp_sequencenote_48{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_49 .arp_sequencenote_49{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 
 .arp_sequence--highlighting_50 .arp_sequencenote_50{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_51 .arp_sequencenote_51{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_52 .arp_sequencenote_52{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_53 .arp_sequencenote_53{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_54 .arp_sequencenote_54{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_55 .arp_sequencenote_55{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_56 .arp_sequencenote_56{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_57 .arp_sequencenote_57{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_58 .arp_sequencenote_58{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_59 .arp_sequencenote_59{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 
 .arp_sequence--highlighting_60 .arp_sequencenote_60{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_61 .arp_sequencenote_61{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_62 .arp_sequencenote_62{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_63 .arp_sequencenote_63{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_64 .arp_sequencenote_64{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_65 .arp_sequencenote_65{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_66 .arp_sequencenote_66{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_67 .arp_sequencenote_67{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_68 .arp_sequencenote_68{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_69 .arp_sequencenote_69{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 
 .arp_sequence--highlighting_70 .arp_sequencenote_70{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_71 .arp_sequencenote_71{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_72 .arp_sequencenote_72{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_73 .arp_sequencenote_73{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_74 .arp_sequencenote_74{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_75 .arp_sequencenote_75{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_76 .arp_sequencenote_76{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_77 .arp_sequencenote_77{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_78 .arp_sequencenote_78{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_79 .arp_sequencenote_79{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 
 .arp_sequence--highlighting_80 .arp_sequencenote_80{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_81 .arp_sequencenote_81{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_82 .arp_sequencenote_82{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_83 .arp_sequencenote_83{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_84 .arp_sequencenote_84{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_85 .arp_sequencenote_85{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_86 .arp_sequencenote_86{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_87 .arp_sequencenote_87{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_88 .arp_sequencenote_88{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_89 .arp_sequencenote_89{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 
 .arp_sequence--highlighting_90 .arp_sequencenote_90{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_91 .arp_sequencenote_91{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_92 .arp_sequencenote_92{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_93 .arp_sequencenote_93{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_94 .arp_sequencenote_94{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_95 .arp_sequencenote_95{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_96 .arp_sequencenote_96{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_97 .arp_sequencenote_97{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_98 .arp_sequencenote_98{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_99 .arp_sequencenote_99{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 
 .arp_sequence--highlighting_100 .arp_sequencenote_100{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_101 .arp_sequencenote_101{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_102 .arp_sequencenote_102{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_103 .arp_sequencenote_103{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_104 .arp_sequencenote_104{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_105 .arp_sequencenote_105{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_106 .arp_sequencenote_106{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_107 .arp_sequencenote_107{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_108 .arp_sequencenote_108{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_109 .arp_sequencenote_109{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 
 .arp_sequence--highlighting_110 .arp_sequencenote_110{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_111 .arp_sequencenote_111{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_112 .arp_sequencenote_112{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_113 .arp_sequencenote_113{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_114 .arp_sequencenote_114{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_115 .arp_sequencenote_115{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_116 .arp_sequencenote_116{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_117 .arp_sequencenote_117{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_118 .arp_sequencenote_118{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_119 .arp_sequencenote_119{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 
 .arp_sequence--highlighting_120 .arp_sequencenote_120{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_121 .arp_sequencenote_121{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_122 .arp_sequencenote_122{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_123 .arp_sequencenote_123{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_124 .arp_sequencenote_124{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_125 .arp_sequencenote_125{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_126 .arp_sequencenote_126{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_127 .arp_sequencenote_127{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }
 .arp_sequence--highlighting_128 .arp_sequencenote_128{
     background: #2789f9;
+    border: solid 2px #2789f9;
 }

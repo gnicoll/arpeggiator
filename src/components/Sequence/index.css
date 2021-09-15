@@ -1,3 +1,14 @@
+.arp_sequence {
+    border-bottom: 2px solid #222;
+    border-top: 2px solid #555;
+    box-shadow: inset -2px 2px 5px #464646;
+    background: #333;
+    margin: 0 auto;
+    width: fit-content;
+    padding: 1rem 2rem;
+    border-radius: .25rem;
+}
+
 .arp_sequencesteps {
     display: flex;
     margin: 0 2px;
