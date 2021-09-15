@@ -6,7 +6,7 @@
     box-sizing:  content-box;
   }
   .arp_keys_octave{
-    overflow:hidden;
+    //overflow:hidden;
     display:flex;
     position:relative;
     margin:2px 0 2px 2px;

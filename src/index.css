@@ -26,7 +26,7 @@ code {
   display:grid;
   background:#333;
   border-radius: .25rem;
-  grid-template-columns: 1fr;
+  grid-template-columns: 4rem 1fr;
   margin: 0 auto;
   height: 11rem;
   margin-top: 1rem;
@@ -37,10 +37,11 @@ code {
 }
 
 .arp_keyboard_interface {
+  grid-column: span 2;
   z-index: 1;
   display: grid;
   padding: 1rem 1rem;
-  grid-template-columns: 125px 1fr 1fr 1fr;
+  grid-template-columns: auto 1fr 1fr 1fr;
   grid-gap: 1rem;
   align-items: baseline;
 }
@@ -127,5 +128,26 @@ code {
   position:relative;
   height: 10rem;
   box-sizing:  content-box;
-  margin: 0 1rem;
+  margin: 0 1rem 0 1rem;
+}
+
+.arp-keyboard-rest {
+  padding: 0 0 0 1.5rem;
+}
+.arp-keyboard-rest-key {
+  width: 2rem;
+  height: 5rem;
+  border-radius: .25rem;
+  background: #222;
+}
+.arp-keyboard-rest-key:hover {
+  background: #111;
+}
+.arp-keys-playing_-1 .arp-keyboard-rest-key{
+  background: #f9cf27 !important;
+  box-shadow: 0px 0px 10px 3px #f9cf27;
+}
+
+.arp-keys-highlighting_-1 .arp-keyboard-rest-key{
+  background: #2789f9 !important;
 }

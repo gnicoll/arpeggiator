@@ -46,6 +46,7 @@ export default class Loop {
           this.arp.pattern[this.arpStep-1] !== undefined
         ) {
         actualNote = this.notes[this.step].number+this.arp.pattern[this.arpStep-1];
+        if (actualNote > 128) actualNote = 128;
         playDetails.note = actualNote;
       }
       this.getPlayNote(actualNote);

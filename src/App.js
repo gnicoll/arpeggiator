@@ -1,7 +1,6 @@
 import WebMidi from 'webmidi';
 import React, { useEffect, useCallback  } from 'react';
 import './App.css';
-//import Loop from './utils/webmidi';
 import Keyboard from './components/Keyboard';
 import Sequence from './components/Sequence';
 import * as Tone from 'tone'
@@ -20,17 +19,16 @@ function App() {
   const [playedArpStep, setPlayedArpStep] = React.useState(-1);
   const [play, setPlay] = React.useState(true);
 
+  const [highlightNote, setHighlightNote] = React.useState(undefined);
   const [playedNote, setPlayedNote] = React.useState(-1);
   const [noteNumber, setNoteNumber] = React.useState(-1);
   const [noteName, setNoteName] = React.useState('');
-  //const [arp, setArp] = React.useState([0, 4, 7, 11, 7, 4]);
-  //const [arpStep, setArpStep] = React.useState(1);
+
   const [midiOutput, setMidiOutput] = React.useState();
   const [midiInput, setMidiInput] = React.useState();
 
   
   const [arpLoop, setArpLoop] = React.useState(new Loop(1, 0, [], {pattern:[0]}));
-//  let arpLoop = new Loop(1, 0, [{number:-1}], {pattern:[0]});
   
   
   useEffect(() => {
@@ -41,16 +39,13 @@ function App() {
     //  console.log(e.data);
     //});
     
-    //NTS-1 digital kit 1 SOUND
-
-
     //arpLoop.arp = {pattern:[0]};  
-//          arpLoop.arp.pattern = [0, 4, 7, 11, 7, 4];
-//          arpLoop.arp.pattern = [0, 4, 7, 11, 11, 7, 4, 0];
-//          arpLoop.arp.pattern = [0, 12, -12, undefined];
-//          arpLoop.arp.pattern = [0, 4, 7, 11, -12, -8, -5, -1];
-            arpLoop.arp.pattern = [0, 5, 9, 14];
-    //arpLoop.arp.pattern = [0, undefined, undefined, undefined];
+    //arpLoop.arp.pattern = [0, 4, 7, 11, 7, 4];
+    //arpLoop.arp.pattern = [0, 4, 7, 11, 11, 7, 4, 0];
+    //arpLoop.arp.pattern = [0, 12, -12, undefined];
+    //arpLoop.arp.pattern = [0, 4, 7, 11, -12, -8, -5, -1];
+    //arpLoop.arp.pattern = [0, 5, 9, 14];
+    arpLoop.arp.pattern = [0, undefined, undefined, undefined, undefined, undefined, undefined, undefined];
     //arpLoop.arp.pattern = [0];
     //arpLoop.arp.pattern = [0, 5, 3, 4];
     //arpLoop.notes = notes;
@@ -104,15 +99,6 @@ function App() {
     });//*/
   }, []);
 
-  const nextEditingStep = (noteList)=>{
-    for (let n = 0; n < noteList.length; n++) {
-      if (!noteList[n]) {
-        return n;
-      }
-    }
-    return notes.length-1;
-  }
-
   useEffect(() => {
     //arpLoop.synthOutput = new Tone.Synth().toDestination();
     //loopingStep();
@@ -141,7 +127,7 @@ function App() {
     setNoteNumber(num);
 
     
-  }, [arpLoop, notes, editingStep, nextEditingStep]);
+  }, [arpLoop, notes, editingStep]);
 
   /*
   const loopStep2 = useCallback(() => {
@@ -171,12 +157,16 @@ function App() {
       setEditingStep(setTo);
   }
 
+  function hoverSequenceHandler(num){
+    setHighlightNote(num)
+  }
+
   return (
   <div className="App arp">
     <div className="arp_keyboard">
       <div className="arp_keyboard_interface">
         <div className='arp_keyboard_brand'>
-          Looper
+          Arp Player
         </div>
         <div className='arp_keyboard_outputs'>
           {midiOutput?.name}<br/>
@@ -189,18 +179,19 @@ function App() {
           <div className={"led "+(playedArpStep%2===0 ? "led--on" : "")}></div>
         </div>
       </div>
-      <div className={"arp_keys arp_keys--playing_"+playedNote}>
-        <div className="arp_keys_shadow"></div>
-        <Keyboard onClick={assignNote} />
+      <div className={'arp-keyboard-rest arp-keys-playing_'+playedNote+' arp-keys-highlighting_'+highlightNote}>
+        <div className='arp-keyboard-rest-key'  onClick={()=>assignNote(-1, 'rest')}>
+
+        </div>
+      </div>
+      <Keyboard onClick={assignNote} onHover={hoverSequenceHandler} playedNote={playedNote} highlightNote={highlightNote} />
+    </div>
+    <div>
+      <div className={"arp_sequence arp_sequence--playing_"+playedStep+" arp_sequence--highlighting_"+highlightNote}>
+        <Sequence notes={notes} onHover={hoverSequenceHandler} onClick={clickSequenceHandler} />
       </div>
     </div>
     <div>
-      <div className={"arp_sequence arp_sequence--playing_"+playedStep}>
-        <Sequence notes={notes} onClick={clickSequenceHandler} />
-      </div>
-    </div>
-    <div>
-      note: {noteName} ({noteNumber})<br/>
       output: {midiOutput?.name}<br/>
       input: {midiInput?.name}<br/>
     </div>

@@ -1,13 +1,21 @@
 import style from './index.css';
 
-const Key = ({ onClick, note, sharp, noteNumber }) => {
+const Key = ({ onClick, note, sharp, noteNumber, onHover }) => {
     function clickHandler(num, n){
         onClick(num, n)
+    }
+    function hoverHandler(num, n){
+      onHover(num, n)
     }
 
     return (
       <div className={"arp_key " +"arp_key_"+noteNumber+" " + (sharp? "arp_key--sharp":"")} >
-        <div className={"arp_key_inner "} onClick={() => clickHandler(noteNumber, note)} >
+        <div 
+          className={"arp_key_inner "} 
+          onClick={() => clickHandler(noteNumber, note)} 
+          onMouseEnter={() => hoverHandler(noteNumber)}
+          onMouseLeave={() => hoverHandler(undefined)} 
+        >
         </div>
       </div>
     )
