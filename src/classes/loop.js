@@ -31,7 +31,7 @@ export default class Loop {
   
     playStep() {
       const playDetails = {
-          note: -1,
+          note: undefined,
           duration: 120,
           arp: this.arp.pattern,
           arpStep: this.arpStep-1,

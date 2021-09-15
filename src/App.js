@@ -40,11 +40,11 @@ function App() {
     //});
     
     //arpLoop.arp = {pattern:[0]};  
-    //arpLoop.arp.pattern = [0, 4, 7, 11, 7, 4];
+    arpLoop.arp.pattern = [0, 4, 7, 11, 7, 4];
     //arpLoop.arp.pattern = [0, 4, 7, 11, 11, 7, 4, 0];
     //arpLoop.arp.pattern = [0, 12, -12, undefined];
     //arpLoop.arp.pattern = [0, 4, 7, 11, -12, -8, -5, -1];
-    arpLoop.arp.pattern = [0, 5, 9, 14, 9, 5];
+    //arpLoop.arp.pattern = [0, 5, 9, 14, 9, 5];
     //arpLoop.arp.pattern = [0, undefined, undefined, undefined, undefined, undefined, undefined, undefined];
     //arpLoop.arp.pattern = [0];
     //arpLoop.arp.pattern = [0, 5, 3, 4];
@@ -197,14 +197,7 @@ function App() {
       </div>
     </div>
     <div>
-      output: {midiOutput?.name}<br/>
       input: {midiInput?.name}<br/>
-    </div>
-    <div>
-      {notes?.map((n, index) => {
-        return (<span key={index}>{n!==undefined && <>{n?.name} ({n?.number}),</>} </span>
-        )
-      })}
     </div>
     <div>
       <select value={midiOutput} name="outputs" id="outputs">

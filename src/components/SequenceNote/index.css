@@ -33,6 +33,9 @@
 .arp_sequencenote_undefined:hover {
     background: #ddd;
 }
+.arp_sequencenote_undefined:before {
+    visibility: hidden;
+}
 
 .arp_sequencenote_noteNumber {
 }
@@ -41,6 +44,8 @@
     font-size: .75rem;
     color: white;
     padding: 1rem 0;
+    position: relative;
+    top: -.5rem
 }
 .arp_sequence--editing_0 .arp_sequencenote_step0{
     border: solid 2px #d4af37;
