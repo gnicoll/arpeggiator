@@ -129,6 +129,7 @@ code {
   height: 10rem;
   box-sizing:  content-box;
   margin: 0 1rem 0 1rem;
+  justify-content: center;
 }
 
 .arp-keyboard-rest {

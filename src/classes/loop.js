@@ -66,7 +66,7 @@ export default class Loop {
         this.synthOutput.triggerAttackRelease("C4", '.120s');
       }
       if (this.midiOutput && noteNumber > -1) {
-        this.midiOutput.playNote(noteNumber, 1, {duration: 120, velocity:0.5});
+        this.midiOutput.playNote(noteNumber, 1, {duration: 750, velocity:0.5});
       }
     }
   }

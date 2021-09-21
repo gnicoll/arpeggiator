@@ -3,6 +3,7 @@ import React, { useEffect, useCallback  } from 'react';
 import './App.css';
 import Keyboard from './components/Keyboard';
 import Sequence from './components/Sequence';
+import ArpCreator from './components/ArpCreator';
 import * as Tone from 'tone'
 //require('./workers/looper')
 import Loop from './classes/loop'
@@ -30,6 +31,9 @@ function App() {
   
   const [arpLoop, setArpLoop] = React.useState(new Loop(1, 0, [], {pattern:[0]}));
   
+  const [arpList, setArpList] = React.useState([]);
+  const [selectedArp, setSelectedArp] = React.useState();
+  const [arpSelector, setArpSelector] = React.useState();
   
   useEffect(() => {
     //var worker = new Worker('looper.js');
@@ -40,11 +44,44 @@ function App() {
     //});
     
     //arpLoop.arp = {pattern:[0]};  
-    arpLoop.arp.pattern = [0, 4, 7, 11, 7, 4];
+    
+    const arps = [];
+
+    arps.push(
+      {
+        arp: [0, 4, 7],
+        name: 'major',
+      }
+    ); 
+    arps.push(
+      {
+        arp: [0, 3, 7],
+        name: 'minor',
+      }
+    ); 
+    arps.push(
+      {
+        arp: [0, 3, 6],
+        name: 'diminished',
+      }
+    ); 
+    arps.push(
+      {
+        arp: [0, 5, 9],
+        name: 'sythn wave',
+      }
+    ); 
+    
+    setArpList(arps);
+    handleSelectArp(arps[0]);
+    //octave
+    arpLoop.arp.pattern = [0, undefined];
+    
+
+    //arpLoop.arp.pattern = [0, 4, 7, 11, 7, 4];
     //arpLoop.arp.pattern = [0, 4, 7, 11, 11, 7, 4, 0];
     //arpLoop.arp.pattern = [0, 12, -12, undefined];
     //arpLoop.arp.pattern = [0, 4, 7, 11, -12, -8, -5, -1];
-    //arpLoop.arp.pattern = [0, 5, 9, 14, 9, 5];
     //arpLoop.arp.pattern = [0, undefined, undefined, undefined, undefined, undefined, undefined, undefined];
     //arpLoop.arp.pattern = [0];
     //arpLoop.arp.pattern = [0, 5, 3, 4];
@@ -144,7 +181,7 @@ function App() {
 
   function loopingStep() {
     step();
-    setTimeout(()=>loopingStep(), 180);
+    setTimeout(()=>loopingStep(), 1000);
   }
 
   function clickPlayHandler(setTo){
@@ -160,6 +197,9 @@ function App() {
   function hoverSequenceHandler(num){
     if (notes.filter((n)=>n?.number===num)?.length !== 0)
       setHighlightNote(num);
+  }
+  function handleSelectArp(a){
+    setSelectedArp(a);
   }
 
   return (
@@ -191,7 +231,10 @@ function App() {
       </div>
       <Keyboard onClick={assignNote} notes={notes} onHover={hoverSequenceHandler} playedNote={playedNote} highlightNote={highlightNote} />
     </div>
-    <div>
+    <div style={{'display':'flex', 'justifyContent':'space-evenly'}}>
+      <div>
+        <ArpCreator />
+      </div>
       <div className={"arp_sequence arp_sequence--playing_"+playedStep+" arp_sequence--highlighting_"+highlightNote+" arp_sequence--editing_"+editingStep}>
         <Sequence notes={notes} onHover={hoverSequenceHandler} onClick={clickSequenceHandler} />
       </div>

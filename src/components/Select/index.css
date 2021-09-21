@@ -1,0 +1,26 @@
+.arp_select{
+    position:relative;
+}
+
+.arp_select_value {
+    padding: 1rem 1rem 1rem 1rem;
+    cursor:pointer;
+}
+.arp_select_options {
+    position:absolute;
+    left: 0rem;
+    top: 0rem;
+    background-color: #fff;
+    padding: .5rem;
+    border-radius: .25rem;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .15);
+    opacity: 0.0;
+    pointer-events:none;
+    transition: opacity 200ms ease-in-out, transform 200ms ease-in-out;
+    transform: translateY(0.5rem);
+}
+.arp_select_options--active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events:auto;
+}

@@ -1,0 +1,18 @@
+.arp_select_option{
+    background-color: white;
+    padding: .5rem;
+    cursor: pointer;
+    box-sizing: content-box;
+    text-align: left;
+}
+
+.arp_select_option--active{
+    border: solid 2px #d4af37;
+    padding: calc(.5rem - 2px);
+    border-radius: .25rem;
+}
+
+.arp_select_option:hover{
+    border-radius: .25rem;
+    background-color: #efefef;
+}
