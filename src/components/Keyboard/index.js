@@ -1,9 +1,10 @@
 import React from 'react';
 import Octave from '../Octave'
+import PropTypes from 'prop-types';
 
-const Keyboard = React.memo(({onClick, playedNote, highlightNote, onHover, notes}) => {
+const Keyboard = ({onClick, playedNote, highlightNote, onHover, notes}) => {
   const octaves = [1,2,3,4,5,6,7]
-
+  console.log("render keyboard: "+ playedNote+" " + highlightNote+" "+ notes)
   //hightlight note should be empty if notes 
   //const hnote = notes.filter((n)=>n?.note===highlightNote)?.length ? highlightNote:'';
 
@@ -18,6 +19,22 @@ const Keyboard = React.memo(({onClick, playedNote, highlightNote, onHover, notes
         </div>
     </div>
   )
-});
+}
 
-export default Keyboard
+Keyboard.defaultProps = {
+  onClick: undefined,
+  playedNote: null, 
+  highlightNote: null, 
+  onHover: undefined, 
+  notes: [],
+};
+
+Keyboard.propTypes = {
+  onClick: PropTypes.func,
+  playedNote: PropTypes.object, 
+  highlightNote: PropTypes.object, 
+  onHover: PropTypes.func, 
+  notes: PropTypes.array,
+};
+
+export default React.memo(Keyboard);

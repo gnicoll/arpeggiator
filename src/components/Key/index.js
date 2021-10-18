@@ -2,10 +2,12 @@ import style from './index.css';
 
 const Key = ({ onClick, note, sharp, noteNumber, onHover }) => {
     function clickHandler(num, n){
+      if (onClick)
         onClick(num, n)
     }
     function hoverHandler(num, n){
-      onHover(num, n)
+      if (onHover)
+        onHover(num, n)
     }
 
     return (
